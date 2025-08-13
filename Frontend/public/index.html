@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+ 
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <title>Apni Dukaan</title>
+
+      <script type="text/javascript">
+     var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[]};
+ // replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
+clevertap.account.push({"id": "W44-Z4K-K65Z", "region": "eu1"}); // replace with the CLEVERTAP_ACCOUNT_REGION with the actual ACCOUNT REGION value from your Dashboard -> Settings page
+clevertap.privacy.push({optOut: false}); //set the flag to true, if the user of the device opts out of sharing their data
+clevertap.privacy.push({useIP: false}); //set the flag to true, if the user agrees to share their IP data
+ (function () {
+		 var wzrk = document.createElement('script');
+		 wzrk.type = 'text/javascript';
+		 wzrk.async = true;
+		 wzrk.src = 'https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js';
+		 var s = document.getElementsByTagName('script')[0];
+		 s.parentNode.insertBefore(wzrk, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+ 
+  </body>
+
+
+</html>
